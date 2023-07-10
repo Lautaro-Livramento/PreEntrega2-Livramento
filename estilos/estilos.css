@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    align-self: center;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+}
+.logo{
+    text-decoration: none;
+    -webkit-transform: rotate(-90deg); 
+    margin-right: -7rem;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #141414;
+    font-weight: bold;
+    font-size: 30px;
+}
+nav{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 1.2rem;
+    padding: 0;
+    -webkit-transform: rotate(90deg); 
+    
+}
+.menu{
+    position: fixed;
+    align-self: center;
+    display: flex;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    display: inline;
+    margin-right:2rem; 
+}
+
+.menu li a{
+    color: #bab8b8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color:#141414;
+}
+.mark{
+    display: none;
+}
+
+.galeria{
+    background-color: gray;
+    display: flex;
+    width: 72vw;
+    flex-flow: row nowrap;
+    padding: 60px;
+    justify-content: space-around;
+}
+
+.proyectos{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: end;
+}
+
+.body-photo{
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.galeria-photo{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.photo{
+    width: 75vw;
+}
+
+.contenedor-photo{
+    margin-bottom: 90px;
+}
+
+.caption{
+    padding-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.text-bio-contacto{
+    display: none;
+}
+.text-bio-contacto-mobile{
+    width: 100vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    padding: 15vw;
+}
+.img-misc{
+    width: 30vw;
+    position: fixed;
+    bottom: 75px;
+    right:75px;
+    box-shadow: 0px 15px 25px #141414;
+}
+
+.carousel{
+    height:9vh;
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    width: 100vw;
+    background-color: rgb(218, 216, 216);
+    align-self: flex-end;
+    padding: 0;
+}
+
+.carousel-item{
+    margin: 2vh 0 0 0;
+    padding: 0;
+    
+}
+
+.carousel-item p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+    
+
+@media screen and (min-width:600px){
+    nav{
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+        -webkit-transform: rotate(0deg); 
+        
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    
+    header{
+        align-self: flex-start;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .logo{
+        margin: 0;
+        padding: 0;
+        -webkit-transform: rotate(0deg); 
+    }
+    
+    .galeria{
+        background-color: gray;
+        display: flex;
+        width: 72vw;
+        flex-flow: row nowrap;
+        padding: 60px;
+        justify-content: space-around;
+    }
+    
+    .proyectos{
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: end;
+    }
+    
+    .body-photo{
+        width: 100vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    
+    .galeria-photo{
+        display: flex;
+        width: 50vw;
+        flex-wrap: wrap;
+    }
+    .photo{
+        width: 36vw;
+    }
+    
+    .contenedor-photo{
+        margin-bottom: 90px;
+    }
+    
+    .caption{
+        padding-top: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        text-align: right;
+    
+    }
+    
+    .text-bio-contacto{
+        width: 50vw;
+        margin-top: 30vw;
+        padding-left: 6vw;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        display: block;
+    }
+    .text-bio-contacto-mobile{
+        display: none;
+    }
+    
+    .mark
+    {
+       -webkit-transform: rotate(90deg);     
+       width: 150px;  
+       position: fixed;
+       bottom: 75px;
+    }
+    
+    .img-misc{
+        width: 15vw;
+        position: fixed;
+        bottom: 75px;
+        right:75px;
+        box-shadow: 0px 15px 25px #141414;
+    }
+}
